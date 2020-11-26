@@ -19,12 +19,12 @@ function ProductDetails() {
         temp.qty = qty;
         setProductDetails(temp);
       });
-  }, [id]);
+  }, [id, qty]);
   useEffect(() => {
     let temp = productDetails;
     temp.qty = qty;
     setProductDetails(temp);
-  }, [qty]);
+  }, [qty, productDetails]);
   function decrementQty() {
     qty <= 1 ? setQty(1) : setQty(qty - 1);
   }

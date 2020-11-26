@@ -1,5 +1,5 @@
 
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import React, { useContext } from "react";
 import { CartContext } from "../../reducer/Context";
 import logo from '../../sale.png'
