@@ -52,7 +52,7 @@ const CartContextProvider = (props) => {
     };
 
     localStorage.setItem("cart", JSON.stringify(data));
-  }, [cart.product]);
+  }, [cart.product, cart]);
 
   return (
     <CartContext.Provider

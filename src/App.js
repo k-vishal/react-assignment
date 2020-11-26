@@ -1,10 +1,9 @@
-import React, {  useContext } from "react";
+import React from "react";
 import './App.css';
 import Headers from './components/Header/Headers';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/Home/Home";
 import ProductDetails from './components/Products/ProductDetails';
-import { CartContext } from "./reducer/Context";
 import CartItems from './components/CartItems/CartItems';
 import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 function App() {

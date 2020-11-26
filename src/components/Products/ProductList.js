@@ -34,7 +34,7 @@ function ProductList() {
   const onChangeOrderBy = (e) => {
     let sorted = [...item].sort((a, b) => {
       let isReversed = e.target.value === "asc" ? 1 : -1;
-      return isReversed == 1 ? a.price - b.price : b.price - a.price;
+      return isReversed === 1 ? a.price - b.price : b.price - a.price;
     });
     seItems(sorted);
   };
@@ -94,7 +94,7 @@ function ProductList() {
                 <br/>
                 <strong style={{ color: "blue" }}>{data.price} ₹</strong>
               </div>
-              <img src={data.image} alt="Image"></img>
+              <img src={data.image} alt=""></img>
               <br />
             </div>
           );

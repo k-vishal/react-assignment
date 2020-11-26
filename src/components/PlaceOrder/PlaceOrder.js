@@ -2,10 +2,10 @@ import React, { useContext } from "react";
 import "./PlaceOrder.css";
 import { CartContext } from '../../reducer/Context';
 import { useHistory } from "react-router-dom";
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 function PlaceOrder() {
   const [errors, setErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
+ // const [isSubmitting, setIsSubmitting] = useState(false);
 
 
   const context = useContext(CartContext);
@@ -33,7 +33,7 @@ function PlaceOrder() {
     e.preventDefault();
     let errArray= validate(values);
     setErrors(errArray);
-   setIsSubmitting(true);
+   // setIsSubmitting(true);
 
    if(Object.keys(errArray).length === 0) {
       alert("Order placed Successfully!");

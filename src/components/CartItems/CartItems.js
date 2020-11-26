@@ -45,7 +45,7 @@ function CartItems() {
               <p className="product__desc">{data.description}</p>
               <strong>{data.price} ₹</strong>
               <strong>Quantity : {data.qty} </strong>
-              <img src={data.image} alt="Image"></img>
+              <img src={data.image} alt=""></img>
               <br />
 
               <button
