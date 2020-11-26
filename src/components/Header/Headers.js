@@ -1,6 +1,6 @@
 
 import { Link, useHistory } from "react-router-dom";
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { CartContext } from "../../reducer/Context";
 import logo from '../../sale.png'
 import "./Headers.css";
@@ -16,12 +16,11 @@ function Headers() {
      context.dispatchState({ type: "searchProduct", value: e.target.value });
       };
     
-      const history = useHistory();
     return (
         <div className="header">
           
         <Link to="/">
-          <img className="header__logo" src={logo} />
+          <img className="header__logo" src={logo} alt="" />
         </Link>
 
       <div className="header__search">

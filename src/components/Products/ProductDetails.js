@@ -34,7 +34,7 @@ function ProductDetails() {
         <img
           className="productDetails_img"
           src={productDetails.image}
-          alt="Loading Image"
+          alt=""
         ></img>
       </div>
       <div className="productDetails__right">
